@@ -1,5 +1,5 @@
 # version 450
-
+//TODO: Inlcude unifrorm for behavior matrix. 
 struct Particle{
     vec2 pos;
     vec2 vel;
@@ -9,7 +9,7 @@ layout(binding = 0) buffer parts {Particle p[ ]; };
 layout(local_size_x = 1000, local_size_y = 1, local_size_z = 1) in;
 
 
-float per(float x, int nx) // periodic bnd’s
+float per(float x, int nx) // periodic bndâ€™s
 {
  if(x<0) x = nx-1;
  else 
